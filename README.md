@@ -33,25 +33,11 @@ pnpm install
 
 ### Environment Variables
 
-Create a `.env.local` file in the root directory with the following variables:
+Create a `.env.local` file in the root directory with the necessary environment variables for database connection and Next.js configuration.
 
-```bash
-# Database Configuration
-DATABASE_URL="your_database_connection_string"
-# Example for PostgreSQL: postgresql://username:password@localhost:5432/database_name
-# Example for MySQL: mysql://username:password@localhost:3306/database_name
-
-# Optional: Database-specific configurations
-DB_HOST="localhost"
-DB_PORT="5432"
-DB_NAME="your_database_name"
-DB_USER="your_username"
-DB_PASSWORD="your_password"
-
-# Next.js Configuration
-NEXTAUTH_SECRET="your_nextauth_secret_key"
-NEXTAUTH_URL="http://localhost:3000"
-```
+**Required variables:**
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
 ### Running the Development Server
 
